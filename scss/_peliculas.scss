@@ -1,7 +1,8 @@
 .peliculas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
     .subtitulopeli{
         font-size: 2rem;
        color: $blanco;
@@ -11,20 +12,20 @@
        margin-top: 35px;
        font-weight: 600;
     }
-    .contenedorp{
+    .contenedorp1{
         display: flex;
-        flex-wrap: wrap;
         padding-left: 60px;
+        
         .imgp{
             width: 250px;
             height: 12vw;
             margin: 10px;
-            border: double white 2px;
+            border: double $blanco 2px;
             opacity: 0.4;
         }
         .imgp:hover{
             opacity: 1;
-            border: #9263EB solid 3px;
+            border: $morado solid 3px;
             border-radius: 10px;
         }
         .subpeli{
