@@ -135,29 +135,6 @@ main .sectionvideo .h2video {
   padding-top: 20px;
 }
 
-footer {
-  margin: 10px auto;
-  background-color: #9263EB;
-  opacity: 5;
-  padding: 10px;
-  width: 100%;
-  color: white;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-footer .redesociales {
-  margin-left: 20px;
-  width: 10px;
-  display: flex;
-  justify-content: end;
-}
-footer .redes {
-  width: 40px;
-  opacity: 0.7;
-  margin: 15px;
-}
-
 .main .container {
   display: flex;
   flex-wrap: wrap;
@@ -266,22 +243,28 @@ footer .redes {
   margin-top: 35px;
   font-weight: 600;
 }
-.peliculas .img {
+.peliculas .contenedorp {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+}
+.peliculas .contenedorp .imgp {
   width: 250px;
   height: 12vw;
   margin: 10px;
   border: double white 2px;
   opacity: 0.4;
 }
-.peliculas .img:hover {
+.peliculas .contenedorp .imgp:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
 }
-.peliculas .subpeli {
+.peliculas .contenedorp .subpeli {
   color: white;
   font-size: 1.2rem;
   text-align: center;
+  font-weight: 600;
 }
 .peliculas .diseñopropio00 {
   padding-top: 20px;
@@ -312,24 +295,24 @@ footer .redes {
   font-size: 2rem;
   font-weight: 600;
 }
-.section2 .contenedor1 {
+.section2 .contenedorn {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.section2 .contenedor1 .img {
+.section2 .contenedorn .imgn {
   width: 250px;
   height: 12vw;
   margin: 10px;
   border: double #ffffff 2px;
   opacity: 0.4;
 }
-.section2 .contenedor1 .img:hover {
+.section2 .contenedorn .imgn:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
 }
-.section2 .contenedor1 .subnov {
+.section2 .contenedorn .subnov {
   color: white;
   text-align: center;
 }
@@ -353,6 +336,18 @@ footer .redes {
 }
 .bodycontacto .estilopropioc {
   font-size: 1.2rem;
+}
+.bodycontacto .formuimg {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.bodycontacto .formuimg .imgformu {
+  text-align: center;
+  width: 800px;
+  height: 400px;
+  border: #9263EB solid 2px;
+  border-radius: 10px;
 }
 .bodycontacto .subcontacto {
   color: white;

@@ -1,0 +1,37 @@
+.bodycontacto{
+    background-color: $rosa2;
+    .titulocontacto{
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .estilopropioc{
+        font-size: 1.2rem;
+    }
+    .formuimg{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+        .imgformu{
+            text-align: center;
+            width: 800px;
+            height: 400px;
+            border: $morado solid 2px;
+            border-radius: 10px;
+        }
+    }
+    .subcontacto{
+        color: white;
+        text-align: center;
+    }
+    .estilopropioc{
+        font-size: 1.2rem;
+    }
+    .formu{
+        width: 400px;
+        margin: 0 auto;
+        border: #9263EB solid 2px;
+        border-radius: 5px;
+    }
+}

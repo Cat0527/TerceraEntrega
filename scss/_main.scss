@@ -1,0 +1,76 @@
+main{
+    .imgtamaño{
+        width: 1400px;
+        height: 50vw;
+        padding: 15px;
+        margin: 10px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .subtitulo1{
+        font-size: 2rem;
+        font-weight: 600;
+        color: $blanco;
+        text-align: start;
+        padding: 30px;
+    }
+    .subtitulo2{
+       font-size: 2rem;
+       color: $blanco;
+       text-align: start;
+       padding-left: 30px;
+       padding-top: 50px;
+       margin-top: 35px;
+       font-weight: 600;
+    }
+    .subtitulo3{
+        text-align: center;
+        color: $blanco;
+        font-size: 1.3rem;
+        font-weight: 400; 
+    }
+    .contenedor1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px, auto;
+        .img{
+            width: 250px;
+            height: 12vw;
+            margin: 10px;
+            border: double white 2px;
+            opacity: 0.4;
+        }
+        .img:hover{
+            opacity: 1;
+            border: #9263EB solid 3px;
+            border-radius: 10px;
+        }
+    }
+    .sectionvideo{
+        text-align: center;
+        .video{
+            padding: 15px;
+            width: 1400px; 
+        }
+        .thrillers{
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            text-align: start;
+        }
+        .h2video{
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+    }
+}
