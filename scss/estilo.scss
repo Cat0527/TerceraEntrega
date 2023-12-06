@@ -7,50 +7,5 @@
 @import "peliculas";
 @import "novedades";
 @import "contacto";
+@import "animaciones";
 
-.linea{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
-.separacion{
-    background: linear-gradient(#FF50F5,#FDA4EA,#FF50F5);
-    height: 30px;
-    width: 100%;
-}
-.article1:hover{
-    transform: scale(1.1, 1.1);
-}
-.contenedornov:hover{
-    transform: scale(1.2, 1.2);
-}
-.contenedorp:hover{
-    transform: scale(1.1, 1.1);
-}
-.dorama:hover{
-    transform: scale(1.2, 1.2);
-}
-.infocontacto{
-    text-align: center;
-    padding-top: 20px;
-    
-    .tituloinfo{
-        font-weight: 600;
-        font-size: 1.5rem;
-        color: $blanco;
-    }
-    .info{
-        font-size: 1.3rem;
-        font-weight: 400;
-        color: $blanco;
-        line-height: 2rem;
-    }
-    .infoh4{
-        font-size: 1.1rem;
-        font-weight: 300;
-        color: $blanco;
-        .correoinfo{
-            text-decoration: none;
-        }
-    }
-}
