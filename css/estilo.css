@@ -26,12 +26,12 @@ header .header_titular {
   color: #ffffff;
   text-align: center;
   padding: 15px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 header nav {
-  width: 90%;
-  height: 80px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   background-color: #9263EB;
   display: flex;
@@ -39,7 +39,7 @@ header nav {
   border-radius: 10px;
 }
 header .header_imgLogo {
-  width: 70px;
+  width: 100%;
   margin: auto;
   padding: 5px;
 }
@@ -47,7 +47,9 @@ header .header_menuList {
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 20px;
+}
+header .header_menuList .header_item {
+  font-size: 1.1rem;
 }
 header .header_menuList .header_link {
   color: #ffffff;
@@ -72,51 +74,52 @@ main .contenedor {
   justify-content: center;
 }
 main .subtitulo1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #ffffff;
   text-align: start;
   padding: 30px;
 }
 main .subtitulo2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #ffffff;
   text-align: start;
   padding-left: 30px;
-  padding-top: 50px;
-  margin-top: 35px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   font-weight: 600;
 }
-main .subtitulo3 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
 main .contenedor1 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 30px, auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding: 15px;
+  padding-right: 45px;
 }
-main .contenedor1 .img {
-  width: 250px;
-  height: 12vw;
+main .contenedor1 .imgi {
+  width: 100%;
+  height: auto;
   margin: 10px;
-  border: double white 2px;
+  border: double rgb(238, 234, 234) 2px;
   opacity: 0.4;
 }
-main .contenedor1 .img:hover {
+main .contenedor1 .imgi:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
+}
+main .contenedor1 .subtitulo3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
 }
 main .sectionvideo {
   text-align: center;
 }
 main .sectionvideo .video {
   padding: 15px;
-  width: 1400px;
+  width: 100%;
 }
 main .sectionvideo .thrillers {
   color: white;
@@ -146,57 +149,61 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+footer .derechos {
+  align-items: center;
+}
 footer .redesociales {
   margin-left: 20px;
   width: 10px;
   display: flex;
   justify-content: end;
+  align-content: space-around;
+  gap: 20px;
+  padding-right: 15px;
 }
 footer .redes {
-  width: 40px;
+  width: 35px;
   opacity: 0.7;
-  margin: 15px;
 }
 
-.main .container {
+.mains .containers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: auto;
 }
-.main .container .section1 {
+.mains .containers .sections {
   grid-area: section1;
 }
-.main .container .section1 .img1 {
+.mains .containers .sections .img1s {
   width: 700px;
   height: 700px;
   padding: 40px;
   padding-left: 60px;
 }
-.main .container .section1 .sub1 {
+.mains .containers .sections .sub1 {
   color: #ffffff;
   padding-top: 40px;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
 }
-.main .container .section2 {
+.mains .containers .section2 {
   grid-area: section2;
 }
-.main .container .section2 .sub2 {
+.mains .containers .section2 .sub2 {
   color: #ffffff;
   padding: 10px;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
 }
-.main .container .section2 .img2 {
+.mains .containers .section2 .img2s {
   width: 700px;
   height: 700px;
   padding: 40px;
   margin: 0, auto;
 }
-.main .seriestitulo {
+.mains .seriestitulo {
   color: white;
   font-size: 2rem;
   font-weight: 600;
@@ -204,33 +211,35 @@ footer .redes {
   padding-top: 50px;
   padding-bottom: 15px;
 }
-.main .tituloCarrusel {
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.article .tituloCarrusel {
   color: white;
   padding-bottom: 15px;
   padding-left: 15px;
   padding: 20px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-.main .article {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 8px;
-}
-.main .subseries {
+.article .tituloCarrusel .article1 .subseries {
   text-align: center;
   color: #ffffff;
   padding-bottom: 20px;
 }
-.main .imgcarrusel {
-  width: 280px;
-  height: 12vw;
+.article .tituloCarrusel .article1 .imgs {
+  width: 100%;
+  height: auto;
   margin: 10px;
   border: double white 2px;
   opacity: 0.4;
 }
-.main .imgcarrusel:hover {
+.article .tituloCarrusel .article1 .imgs:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
@@ -240,8 +249,8 @@ footer .redes {
   .contenedor {
     width: 100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 3fr auto auto;
-    grid-template-areas: "header" "section1" "article" "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "main" "article" "footer";
   }
 }
 @media screen and (max-width: 480px) {
@@ -257,47 +266,52 @@ footer .redes {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.peliculas .subtitulopeli {
+.peliculas .sectionp {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  flex-wrap: nowrap;
+}
+.peliculas .sectionp .h2peli {
   font-size: 2rem;
   color: #ffffff;
   text-align: start;
   padding-left: 30px;
   padding-top: 50px;
-  margin-top: 35px;
   font-weight: 600;
 }
-.peliculas .contenedorp1 {
+.peliculas .sectionp .contenedorp1 {
+  padding: 15px;
   display: flex;
-  padding-left: 60px;
+  gap: 15px;
 }
-.peliculas .contenedorp1 .imgp {
-  width: 250px;
-  height: 12vw;
-  margin: 10px;
+.peliculas .sectionp .contenedorp1 .imgp {
+  width: 100%;
+  height: auto;
   border: double #ffffff 2px;
   opacity: 0.4;
 }
-.peliculas .contenedorp1 .imgp:hover {
+.peliculas .sectionp .contenedorp1 .imgp:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
 }
-.peliculas .contenedorp1 .subpeli {
-  color: white;
+.peliculas .sectionp .contenedorp1 .subpeli {
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
+  padding-bottom: 40px;
 }
 .peliculas .diseñopropio00 {
   padding-top: 20px;
   margin-top: 15px;
 }
 
-.recomendados h2 {
+.recomendados .reco {
   margin: 15px;
   padding-top: 20px;
   padding-left: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 600;
 }
@@ -306,10 +320,10 @@ footer .redes {
   padding: 20px;
 }
 
-.section2 {
+.sectionn {
   padding: 20px;
 }
-.section2 .subtitulo2 {
+.sectionn .subtitulo2 {
   margin: 15px;
   padding-top: 20px;
   padding-left: 10px;
@@ -317,24 +331,27 @@ footer .redes {
   font-size: 2rem;
   font-weight: 600;
 }
-.section2 .contenedorn {
+.sectionn .contenedorn {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  flex-wrap: nowrap;
+  gap: 15px;
 }
-.section2 .contenedorn .imgn {
-  width: 250px;
-  height: 12vw;
-  margin: 10px;
+.sectionn .contenedorn .contenedornov {
+  padding: 20px;
+}
+.sectionn .contenedorn .contenedornov .imgn {
+  width: 100%;
+  height: auto;
   border: double #ffffff 2px;
   opacity: 0.4;
 }
-.section2 .contenedorn .imgn:hover {
+.sectionn .contenedorn .contenedornov .imgn:hover {
   opacity: 1;
   border: #9263EB solid 3px;
   border-radius: 10px;
 }
-.section2 .contenedorn .subnov {
+.sectionn .contenedorn .contenedornov .subnov {
   color: white;
   text-align: center;
 }
@@ -374,8 +391,8 @@ footer .redes {
 }
 .bodycontacto .formuimg .imgformu {
   text-align: center;
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   border: #9263EB solid 2px;
   border-radius: 10px;
 }

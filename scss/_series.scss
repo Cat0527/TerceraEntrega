@@ -1,41 +1,38 @@
-.main{
-    .container{
+.mains{
+    .containers{
         display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       padding: auto;
-       .section1{
-              grid-area: section1;
-              .img1{
-               width: 700px;
-               height: 700px;
-               padding: 40px;
-               padding-left: 60px;
-               
-               }
-               .sub1{
+        flex-wrap: wrap;
+        padding: auto;
+        .sections{
+            grid-area: section1;
+            .img1s{
+            width: 700px;
+            height: 700px;
+            padding: 40px;
+            padding-left: 60px;
+            }
+            .sub1{
                 color: $blanco;
                 padding-top: 40px;
-               font-size: 1.8rem;
-               font-weight: 600;
-               text-align: center;
-               }
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-align: center;
+                }
         }
         .section2{
             grid-area: section2;
             .sub2{
                 color: $blanco;
                 padding: 10px;
-               font-size: 1.8rem;
-               font-weight: 600;
-               text-align: center;
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-align: center;
             }
-            .img2{
+            .img2s{
                 width: 700px;
-               height: 700px;
-              padding: 40px;
-              margin: 0,auto;
-             
+                height: 700px;
+                padding: 40px;
+                margin: 0,auto;
             }
         }
     }
@@ -49,47 +46,51 @@
         padding-bottom: 15px;
     }
     
-    .tituloCarrusel{
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding: 20px;
-        font-size: 2rem;
-        font-weight: 600;
+    
     }
     .article{
-        display: flex;
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr));
         justify-content: space-between;
-        flex-wrap: wrap;
-        padding-left: 8px;
-    }
-    
-    .subseries{
-        text-align: center;
-        color: $blanco;
-        padding-bottom: 20px;
-    }
-    .imgcarrusel{
-        width: 280px;
-        height: 12vw;
-        margin: 10px;
-        border: double white 2px;
-        opacity: 0.4;
-    }
-    .imgcarrusel:hover{
-        opacity: 1;
-        border: #9263EB solid 3px;
-        border-radius: 10px;
+        flex-wrap: nowrap;
+        gap: 16px;
+        .tituloCarrusel{
+            color: white;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        .article1{
+            .subseries{
+                text-align: center;
+                color: $blanco;
+                padding-bottom: 20px;
+            }
+            .imgs{
+                width: 100%;
+                height: auto;
+                margin: 10px;
+                border: double white 2px;
+                opacity: 0.4;
+            }
+            .imgs:hover{
+                opacity: 1;
+                border: #9263EB solid 3px;
+                border-radius: 10px;
+            }
+        }
+        
     }
 }
 @media screen and (max-width:768px) {
     .contenedor{
         width: 100vw;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 3fr auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
         "header"
-        "section1"
+        "main"
         "article"
         "footer";
     }

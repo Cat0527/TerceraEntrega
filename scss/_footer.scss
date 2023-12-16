@@ -8,17 +8,22 @@ footer{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    .derechos{
+        align-items: center;
+    }
     .redesociales{
         margin-left: 20px;
-       width: 10px; 
-       display: flex;
-       justify-content: end;
+        width: 10px; 
+        display: flex;
+        justify-content: end;
+        align-content: space-around;
+        gap: 20px;
+        padding-right: 15px;
+
     }
     .redes {
-        width: 40px;
+        width: 35px;
         opacity: .7;
-        margin: 15px;
-        
     }
     
 }
